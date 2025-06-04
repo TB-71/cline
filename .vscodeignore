@@ -46,3 +46,25 @@ docs/**
 
 # Include icons
 !assets/icons/**
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "watch",
+      "group": "build",
+      "problemMatcher": "$esbuild-watch",
+      "isBackground": true,
+      "label": "npm: watch"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": "$esbuild",
+      "label": "npm: build"
+    }
+  ]
+}
+
+

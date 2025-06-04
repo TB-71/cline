@@ -188,3 +188,23 @@ To contribute to the project, start with our [Contributing Guide](CONTRIBUTING.m
 ## License
 
 [Apache 2.0 © 2025 Cline Bot Inc.](./LICENSE)
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "watch",
+      "group": "build",
+      "problemMatcher": "$esbuild-watch",
+      "isBackground": true,
+      "label": "npm: watch"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": "$esbuild",
+      "label": "npm: build"
+    }
+  ]
+}
